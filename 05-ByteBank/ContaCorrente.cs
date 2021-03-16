@@ -2,6 +2,7 @@
 
 public class ContaCorrente
 {
+    public Cliente cliente;
     public string titular;
     public int agencia;
     public int conta;
