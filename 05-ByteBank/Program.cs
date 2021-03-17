@@ -10,6 +10,21 @@ namespace ByteBank
     {
         static void Main(string[] args)
         {
+            Cliente gabriela = new Cliente();
+            gabriela.nome = "Gabriela";
+            gabriela.profissao = "Dev";
+            gabriela.cpf = "427.987.894-20";
+
+            ContaCorrente conta = new ContaCorrente();
+            conta.titular = gabriela;
+            conta.saldo = 500;
+            conta.agencia = 563;
+            conta.numero = 5634527;
+
+            Console.WriteLine(gabriela.nome);
+            Console.WriteLine(conta.titular.nome);
+
+            Console.ReadLine();
         }
     }
 }
