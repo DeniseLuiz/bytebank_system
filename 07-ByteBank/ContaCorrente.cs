@@ -7,9 +7,9 @@
 
         public Cliente Titular { get; set; }
 
-        public int TotalDeContasCriadas { get; set; }
+        public static int TotalDeContasCriadas { get; private set; }
 
-        public static int totalDeContasCriadas { get; set; }
+
         public int Agencia {
             get 
             {

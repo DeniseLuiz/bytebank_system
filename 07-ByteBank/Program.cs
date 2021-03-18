@@ -15,7 +15,11 @@ namespace _07_ByteBank
 
             conta.Agencia = -10;
             Console.WriteLine(conta.Agencia);
-            Console.WriteLine(ContaCorrente.totalDeContasCriadas);
+            Console.WriteLine(ContaCorrente.TotalDeContasCriadas);
+            //ContaCorrente.TotalDeContasCriadas = 5; N PERMITE
+
+            ContaCorrente conta2 = new ContaCorrente(1500, 897);
+            Console.WriteLine(ContaCorrente.TotalDeContasCriadas);
             Console.ReadLine();
         }
     }
