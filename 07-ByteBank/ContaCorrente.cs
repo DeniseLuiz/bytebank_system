@@ -3,22 +3,29 @@
     public class ContaCorrente
     {
         private double _saldo = 100;
-        private Cliente _titular;
+        private int _agencia;
 
-        public Cliente Titular
-        {
-            get
+        public Cliente Titular { get; set; }
+
+        public int TotalDeContasCriadas { get; set; }
+
+        public static int totalDeContasCriadas { get; set; }
+        public int Agencia {
+            get 
             {
-                return _titular;
+                return _agencia;
             }
-            set
+            set 
             {
-                _titular = value;
-            }
+                if(value <= 0)
+                {
+                    return; 
+                }
+                _agencia = value;
+            } 
         }
-        public string Agencia { get; set; }
 
-        public string Numero { get; set; }
+        public int Numero { get; set; }
 
         public double Saldo
         {
@@ -38,6 +45,13 @@
             }
         }
        
+
+        public ContaCorrente(int agencia, int numero)
+        {
+            Agencia = agencia;
+            Numero = numero;
+            TotalDeContasCriadas++;
+        }
 
         public bool Sacar(double valor)
         {

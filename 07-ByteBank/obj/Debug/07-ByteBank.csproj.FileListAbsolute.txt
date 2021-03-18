@@ -1,0 +1,7 @@
+C:\Users\Denise\Documents\GitHub\ByteBank\ByteBank\07-ByteBank\bin\Debug\07-ByteBank.exe.config
+C:\Users\Denise\Documents\GitHub\ByteBank\ByteBank\07-ByteBank\bin\Debug\07-ByteBank.exe
+C:\Users\Denise\Documents\GitHub\ByteBank\ByteBank\07-ByteBank\bin\Debug\07-ByteBank.pdb
+C:\Users\Denise\Documents\GitHub\ByteBank\ByteBank\07-ByteBank\obj\Debug\07-ByteBank.csprojAssemblyReference.cache
+C:\Users\Denise\Documents\GitHub\ByteBank\ByteBank\07-ByteBank\obj\Debug\07-ByteBank.csproj.CoreCompileInputs.cache
+C:\Users\Denise\Documents\GitHub\ByteBank\ByteBank\07-ByteBank\obj\Debug\07-ByteBank.exe
+C:\Users\Denise\Documents\GitHub\ByteBank\ByteBank\07-ByteBank\obj\Debug\07-ByteBank.pdb
