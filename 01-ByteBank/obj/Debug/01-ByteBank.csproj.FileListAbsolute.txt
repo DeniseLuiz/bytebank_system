@@ -1,7 +1,0 @@
-C:\Users\Denise\Documents\GitHub\ByteBank\ByteBank\bin\Debug\ByteBank.exe.config
-C:\Users\Denise\Documents\GitHub\ByteBank\ByteBank\bin\Debug\ByteBank.exe
-C:\Users\Denise\Documents\GitHub\ByteBank\ByteBank\bin\Debug\ByteBank.pdb
-C:\Users\Denise\Documents\GitHub\ByteBank\ByteBank\obj\Debug\01-ByteBank.csprojAssemblyReference.cache
-C:\Users\Denise\Documents\GitHub\ByteBank\ByteBank\obj\Debug\01-ByteBank.csproj.CoreCompileInputs.cache
-C:\Users\Denise\Documents\GitHub\ByteBank\ByteBank\obj\Debug\ByteBank.exe
-C:\Users\Denise\Documents\GitHub\ByteBank\ByteBank\obj\Debug\ByteBank.pdb
