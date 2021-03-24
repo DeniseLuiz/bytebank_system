@@ -4,6 +4,7 @@
     {
         public Cliente Titular { get; set; }
 
+        public static double TaxaDeoperacao { get; private set; }
         public static int TotalDeContasCriadas { get; private set; }
 
 
@@ -52,6 +53,8 @@
             Numero = numero;
 
             TotalDeContasCriadas++;
+            TaxaDeoperacao = 30 / TotalDeContasCriadas;
+            
         }
 
 
