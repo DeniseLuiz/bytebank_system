@@ -9,7 +9,6 @@ Aplicação .Net construida para cadastro de funcionário e mapeamento de todas 
 ## 🎓 Conceitos aplicados:
 <p>- Classe</p>
 <p>- Herança </p>
-
-
+<p>get e set</p>
 ___
 
