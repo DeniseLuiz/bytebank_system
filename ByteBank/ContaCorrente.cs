@@ -39,12 +39,13 @@ namespace ByteBank
        
             if(agencia <= 0 )
             {
-                throw new ArgumentException("A agência deve ser maior que 0.");
+                throw new ArgumentException("A agência deve ser maior que 0.", nameof(agencia));
+                //ArgumentException -> 1º parametro = mensagem, 2º parametro = ParamName.
             }
 
             if(numero <= 0)
             {
-                throw new ArgumentException("O número da conta deve ser maior que 0.");
+                throw new ArgumentException("O número da conta deve ser maior que 0.", nameof(numero));
             }
 
             Agencia = agencia;
