@@ -1,0 +1,33 @@
+﻿using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace ByteBank
+{
+    public class SaldoInsuficienteException : Exception
+    {
+        public double Saldo { get;  }
+
+        public double ValorSaque { get;}
+        public SaldoInsuficienteException()
+        {
+
+        }
+
+        public SaldoInsuficienteException(double saldo, double valorSaque)
+            : this("Tentativa de saque no valor de: " + valorSaque + ", em uma conta com saldo de: " + saldo + ".")
+            //o argumento this chama outro construtor dessa mesma classe, nesse caso chama o construtor do tipo mensagem (abaixo).  
+        {
+            Saldo = saldo;
+            ValorSaque = valorSaque;
+        }
+
+        public SaldoInsuficienteException(string mensagem) : base(mensagem)
+        {
+      
+        }
+    }
+
+}
