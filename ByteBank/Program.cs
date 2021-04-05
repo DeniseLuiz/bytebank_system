@@ -17,7 +17,7 @@ namespace ByteBank
                 //conta.Sacar(-500);
                 ContaCorrente conta2 = new ContaCorrente(12345, 5553);
                 Console.WriteLine("Saldo2: " + conta2.Saldo);
-                conta.Transferir(-500, conta2);
+                conta.Transferir(5000, conta2);
                 Console.WriteLine("Saldo2: " + conta2.Saldo);
                 //ContaCorrente conta = new ContaCorrente(0, 0); //entra na ArgumentException
                 Console.WriteLine("taxa de operação " + ContaCorrente.TaxaDeoperacao);
@@ -30,9 +30,15 @@ namespace ByteBank
             {
                 Console.WriteLine(ex.Message);
             }
+            catch (OperacaoFinanceiraException ex)
+            {
+                Console.WriteLine(ex.Message);
+            }
             catch (Exception ex)
             {
                 Console.WriteLine(ex.Message);
+                Console.WriteLine(ex.StackTrace);
+                Console.WriteLine(ex.InnerException.Message);
             }
             
             Console.ReadLine();
