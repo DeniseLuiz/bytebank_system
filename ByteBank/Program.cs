@@ -18,7 +18,12 @@ namespace ByteBank
 
         private static void CarregarContas()
         {
+            LeitorDeArquivos leitor = new LeitorDeArquivos("contas.txt");
+            leitor.LerProximaLinha();
+            leitor.LerProximaLinha();
+            leitor.LerProximaLinha();
 
+            leitor.Fechar();
         }
 
         private static void TestarInnerExcepion()
