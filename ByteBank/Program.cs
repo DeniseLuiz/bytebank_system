@@ -11,35 +11,45 @@ namespace ByteBank
     {
         static void Main(string[] args)
         {
+            try
+            {
+                CarregarContas();
+            }
+            catch (Exception)
+            {
+
+            }
             //TestarInnerExcepion();
-            CarregarContas();
             Console.WriteLine("Execução finalizada! Tecle enter para sair");
             Console.ReadLine();
         }
 
         private static void CarregarContas()
         {
-            LeitorDeArquivos leitor = null;
 
-            try
-            {
-                leitor = new LeitorDeArquivos("contasl.txt");
-                leitor.LerProximaLinha();
-                leitor.LerProximaLinha();
-                leitor.LerProximaLinha();
-            }
-            catch (IOException)
-            {
-                Console.WriteLine("Exceção IO capturada");
+            using (LeitorDeArquivos leitor = new LeitorDeArquivos("teste.txt"));
+
+            //LeitorDeArquivos leitor = null;
+
+            //try
+            //{
+            //    leitor = new LeitorDeArquivos("contasl.txt");
+            //    leitor.LerProximaLinha();
+            //    leitor.LerProximaLinha();
+            //    leitor.LerProximaLinha();
+            //}
+            //catch (IOException)
+            //{
+            //    Console.WriteLine("Exceção IO capturada");
                 
-            }
-            finally
-            {
-                if(leitor != null)
-                {
-                    leitor.Fechar();
-                }
-            }
+            //}
+            //finally
+            //{
+            //    if(leitor != null)
+            //    {
+            //        leitor.Fechar();
+            //    }
+            //}
             
         }
 

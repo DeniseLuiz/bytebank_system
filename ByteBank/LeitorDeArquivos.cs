@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace ByteBank
 {
-    public class LeitorDeArquivos
+    public class LeitorDeArquivos : IDisposable
     {
         public string Arquivo { get; }
         public LeitorDeArquivos(string arquivo)
@@ -20,13 +20,17 @@ namespace ByteBank
         {
             Console.WriteLine("Lendo linha...");
             throw new IOException();
-
-            return "Linha do aquivo";
         }
 
-        public void Fechar()
-        {
+        //public void Fechar()
+        //{
+            // SUBSTITUIDO PELO MÉTODO DISPOSE 
+        //}
+
+        public void Dispose()
+        { 
             Console.WriteLine("Fechando arquivo.");
+            throw new NotImplementedException();
         }
     }
 }
